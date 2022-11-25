@@ -2,10 +2,10 @@
   "name": "rest_nodejs_server",
   "version": "0.0.1",
   "scripts": {
-    "start": "tsc && node dist/index.js",
-    "build": "tsc",
+    "start": "node ./build/src/index.js",
+    "build": "npx tsc",
     "run:build": "node ./build/src/index.js",
-    "postinstall": "tsc"
+    "postinstall": "npx tsc"
   },
   "author": "",
   "license": "MIT",
