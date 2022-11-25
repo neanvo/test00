@@ -8,6 +8,7 @@ api_key.apiKey = config.api.finnub_api_key
 const finnhubClient = new finnhub.DefaultApi()
 
 export const applyRoutes = (app: Express) => {
+    app.get(`/`, (req, res) => { res.send("")})
     app.get(`/api/v1/symbol`, (req, res) => {
         const { q } = req.query
         finnhubClient.symbolSearch(q, (error: Error, data: FinnubSymbolsResponse) => {
