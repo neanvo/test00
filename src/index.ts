@@ -3,13 +3,11 @@ import { config } from "./config";
 import { applyRoutes } from "./routes";
 var cors = require('cors')
 
-
-
 const bootstrap = async () => {
     const app = express()
     app.use(cors())
     applyRoutes(app)
-    app.listen(config.port, async () => {
+    app.listen(config.port, () => {
         console.log(`🚀 Server is ready at ${config.port} port`);
     })
 }
