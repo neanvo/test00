@@ -2,9 +2,9 @@
   "name": "rest_nodejs_server",
   "version": "0.0.1",
   "scripts": {
-    "start": "ls -a && node ./build/src/index.js",
+    "start": "ls -a && node ./build/index.js",
     "build": "npx tsc",
-    "run:build": "node ./build/src/index.js",
+    "run:build": "node ./build/index.js",
     "postinstall": "npx tsc"
   },
   "author": "",
